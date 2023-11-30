@@ -1,0 +1,8 @@
+{
+    "cid": "1686567566809092",
+    "alias": "promact",
+    "pid": "DE_1686567566809095",
+    "platform": "",
+    "socket": "",
+    "containerPrefix": ""
+}

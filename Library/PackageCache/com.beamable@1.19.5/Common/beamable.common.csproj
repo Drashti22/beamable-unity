@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>Beamable.Common</PackageId>
+        <Authors>Beamable Team</Authors>
+        <Company>Beamable</Company>
+
+        <DefineConstants>DB_MICROSERVICE;DISABLE_BEAMABLE_ASYNCMETHODBUILDER;BEAMABLE_ENABLE_UNITY_SERIALIZATION_TYPES</DefineConstants>
+        <AssemblyName>Unity.Beamable.Runtime.Common</AssemblyName>
+
+        <OutputType>Library</OutputType>
+        <VersionPrefix>$(VersionPrefix)</VersionPrefix>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <TargetFrameworks>netstandard2.0;net6.0;net7.0;netstandard2.1</TargetFrameworks>
+        <LangVersion>8.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\microservice\unityEngineStubs\unityenginestubs.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="'\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="'\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="'\**" />
+    </ItemGroup>
+
+</Project>
